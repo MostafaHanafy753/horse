@@ -1,6 +1,6 @@
 (function ($) {
   $('.se-vi-carousel').slick({
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 1,
     rtl: true,
     prevArrow: '.prev-btn',

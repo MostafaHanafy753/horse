@@ -13,7 +13,7 @@
   --semi-dark-2 : #212235;
   --text-gray   : #9193a8;
   --red         : #ec625f;
-  --border      : #01549F;
+  --border      : #000;
   --light       : #f4f8fb;
   /* 84B3FF */
 
@@ -130,7 +130,7 @@ body {
 }
 @media (max-width: 767.98px) {
   .theme-nav .logo-image {
-    width: 120px;
+    width: 75px;
   }
 }
 .theme-nav .nav-toggle-btn {

@@ -91,9 +91,10 @@ line-height: 50px;
     .sec-i .image-1,
     .sec-iii .image-1,
     .sec-v .image-1 {
-        width: 60%;
+        width: 100%;
     }
 }
+
 
 
 /********Navbar*********/
@@ -103,7 +104,67 @@ line-height: 50px;
 }
 
 /***********************/
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
 
+  .container1 div {
+    flex-basis: 25%;
+    border-left: 4px solid #ccc;
+    padding: 10px;
+  }
+  .container1 div p {
+  font-size: 30px;
+  line-height: 50px;
+  }
+  .container1 div:last-child {
+    border-left: none;
+  }
+
+  @media (max-width: 768px) {
+    .container1 div {
+      flex-basis: 50%;
+    }
+  }
+  @media (max-width: 520px) {
+    .container1 div {
+      flex-basis: 100%;
+      border-left: none;
+      border-bottom: 1px solid #ccc;
+    }
+  }
+  .item{
+    position: relative;
+  }
+  .a1{
+    position:absolute;
+    color: #fff;
+    font-size: 25px;
+    top: 0px;
+    left: 0px;
+    padding: 5px;
+  }
+  .img-car{
+    position: relative;
+  }
+  .a2{
+    position:absolute;
+    color: red;
+    font-size: 15px;
+    bottom: 0px;
+    right: 0px;
+    padding: 10px;
+  }
+  .span333{
+    position:absolute;
+    color: #FFF;
+    font-size: 15px;
+    bottom: 0px;
+    right: 25px;
+    padding: 10px;
+  }
 /* APP SECTION */
 .app-sec>div {
     background-image: url(./../../images/Rectangle_back.png);
