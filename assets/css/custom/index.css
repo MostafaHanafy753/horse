@@ -125,7 +125,7 @@ line-height: 50px;
 
   @media (max-width: 768px) {
     .container1 div {
-      flex-basis: 50%;
+      flex-basis: 47%;
     }
   }
   @media (max-width: 520px) {
@@ -135,12 +135,7 @@ line-height: 50px;
       border-bottom: 1px solid #ccc;
     }
   }
-  .p_custom{
-    border-right: 4px solid #ccc;
-    padding-right: 20px;
 
-
-  }
   .item{
     position: relative;
   }
@@ -706,7 +701,7 @@ hr {
 position: relative;
 transform: translateY(150px);
 opacity: 0;
-transition: all 2s ease;
+transition: all .4s ease;
 }
 .reveal.activation{
     transform: translateY(0px);
@@ -737,4 +732,14 @@ transition: all 2s ease;
     .buttons .app-link {
         display: inline-block;
     }
+  }
+
+  @media (max-width:780px)  {
+    .container1 div{
+        border-left: none;
+        background-image: linear-gradient(to bottom, #F2F5FF, #F2F5FF);
+        border-radius: 20px;
+        margin: 3px;
+     }
+
   }
