@@ -196,7 +196,7 @@ body {
 .has-arrow > i {
   margin-right: 10px;
   font-size: 16px;
-  transition: all .2s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 .has-arrow:hover > i {
   margin-right: 15px;

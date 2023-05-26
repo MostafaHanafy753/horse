@@ -113,7 +113,49 @@
       $('.month-span').hide();
     }
   });
-
-
-
 }(jQuery));
+
+// Get the modal
+const modal = document.getElementById("modal");
+
+// Get all the links that open the modal
+const links = document.querySelectorAll(".open-modal");
+
+// Get the <span> element that closes the modal
+const span = document.getElementsByClassName("close")[0];
+
+// Loop through each link and add an onclick event listener
+for (let i = 0; i < links.length; i++) {
+  links[i].onclick = function(event) {
+    event.preventDefault(); // Prevent the default behavior of the link
+    modal.style.display = "block";
+  }
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+window.addEventListener('scroll',reveal);
+function reveal(){
+  var reveals= document.querySelectorAll('.reveal');
+for( var i=0 ;i<reveals.length;i++){
+  var windowheight =window.innerHeight;
+  var revealtop=reveals[i].getBoundingClientRect().top;
+var revealpoint =150;
+if (revealtop<windowheight-revealpoint){
+  reveals[i].classList.add('activation');
+}
+else{
+  reveals[i].classList.remove('activation');
+
+}
+}
+}
